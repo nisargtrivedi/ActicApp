@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:background="@color/White"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.activedistribution.view.customfont.TextViewSansRegular
+        android:id="@+id/messageTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:padding="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:singleLine="true"
+        android:text="You have recieved a new Job Request"
+        android:textColor="@color/Black1"
+        android:textSize="@dimen/_12sdp" />
+
+
+    <com.activedistribution.view.customfont.TextViewSansRegular
+        android:id="@+id/timeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:padding="@dimen/_4sdp"
+        android:text="Just now"
+        android:textColor="@color/Black" />
+
+    <View
+        android:id="@+id/live_view"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/textHint"/>
+
+
+</LinearLayout>

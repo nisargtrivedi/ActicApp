@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/White"
+            android:layout_height="50dp">
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/edit_profile"
+                android:textColor="@color/Black1"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:src="@drawable/left_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textHint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/White"
+            android:padding="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userIV"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/edit_profile"/>
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/change_profile_picture"
+                android:textColor="@color/Black1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                        <com.activedistribution.view.customfont.TextViewSansBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/first_name"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"/>
+
+                        <com.activedistribution.view.customfont.EditText
+                            android:id="@+id/firstNameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:inputType="text"
+                            android:padding="@dimen/_2sdp"
+                            android:textColor="@color/Black1"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:background="@null"
+                            android:imeOptions="actionNext"
+                            android:backgroundTint="@color/textHint"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:textColorHint="@color/Black1"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/Black1"
+                            android:layout_margin="@dimen/_5sdp"/>
+
+                        <com.activedistribution.view.customfont.TextViewSansBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/last_name"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"/>
+
+                        <com.activedistribution.view.customfont.EditText
+                            android:id="@+id/lastNameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:inputType="text"
+                            android:padding="@dimen/_2sdp"
+                            android:textColor="@color/Black1"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:background="@null"
+                            android:imeOptions="actionNext"
+                            android:backgroundTint="@color/textHint"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:textColorHint="@color/Black1"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/Black1"
+                            android:layout_margin="@dimen/_5sdp"/>
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+
+                <com.activedistribution.view.customfont.EditText
+                    android:id="@+id/phoneET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@null"
+                    android:textColor="@color/Black1"
+                    android:imeOptions="actionNext"
+                    android:backgroundTint="@color/textHint"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColorHint="@color/Black1"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Black1"
+                    android:layout_margin="@dimen/_5sdp"/>
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+
+              <com.activedistribution.view.customfont.EditText
+                    android:id="@+id/addressET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:textColor="@color/Black1"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:backgroundTint="@color/textHint"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColorHint="@color/Black1"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Black1"
+                    android:layout_margin="@dimen/_5sdp"/>
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zipcode"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+
+                <com.activedistribution.view.customfont.EditText
+                    android:id="@+id/zipcodeET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@color/Black1"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:backgroundTint="@color/textHint"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColorHint="@color/Black1"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Black1"
+                    android:layout_margin="@dimen/_5sdp"/>
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_birth"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+
+                <com.activedistribution.view.customfont.EditText
+                    android:id="@+id/dobET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:inputType="text"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@color/Black1"
+                    android:focusable="false"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@null"
+                    android:drawableRight="@drawable/calender"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:imeOptions="actionNext"
+                    android:backgroundTint="@color/textHint"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColorHint="@color/Black1"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Black1"
+                    android:layout_margin="@dimen/_5sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="ID Proof"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/idProofIV"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:src="@drawable/proof" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Black1"
+                    android:layout_margin="@dimen/_5sdp"/>
+
+                <com.activedistribution.view.customfont.Button
+                    android:id="@+id/updateProfileBT"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/button_bg"
+                    android:textColor="@color/White"
+                    android:text="@string/update_profile" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="@dimen/_100sdp"/>
+
+    <com.activedistribution.view.customfont.TextViewSansRegular
+        android:id="@+id/doorToDoorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/White"
+        android:text="@string/door_to_door_flyer_delivery_n_with_gps_tracking"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doorToDoorTV"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/loginLL"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:background="@drawable/login"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="@dimen/_35sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/lock_white"/>
+
+            <com.activedistribution.view.customfont.TextViewSansBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:text="@string/login"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/signUpLL"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/signup"
+            android:layout_height="@dimen/_35sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/edit_blue"/>
+
+            <com.activedistribution.view.customfont.TextViewSansBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/sign_up"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <com.activedistribution.view.customfont.TextViewSansRegular
+        android:id="@+id/termsPrivacyTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/White"
+        android:text="@string/termServices"/>
+
+</RelativeLayout>

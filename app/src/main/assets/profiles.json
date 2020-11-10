@@ -1,0 +1,26 @@
+[  
+   {  
+      "url":"http://www.c-techperformance.com/wp-content/uploads/2014/03/cars-muscle-cars-1969-monochrome-dodge-charger-rt-burnout-dodge-charger-vintage-cars-HD-Wallpapers-1024x640.png",
+      "name":"Sofia",
+      "age":20,
+      "location":"New York"
+   },
+   {  
+      "url":"https://stmed.net/sites/default/files/classic-cars-wallpapers-32009-9932570.jpg",
+      "name":"Roma",
+      "age":22,
+      "location":"California"
+   },
+   {  
+      "url":"https://wallpapercave.com/wp/YICfzVo.jpg",
+      "name":"Zoya",
+      "age":23,
+      "location":"Atlantic City"
+   },
+   {  
+      "url":"https://stmed.net/sites/default/files/rolls-royce-wallpapers-32545-4935954.jpg",
+      "name":"SDF",
+      "age":21,
+      "location":"America"
+   }
+]

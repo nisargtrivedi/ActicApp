@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_above="@+id/view"
+        android:id="@+id/frame_layout_new"
+        android:background="@color/White"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_above="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/grey"/>
+    <com.activedistribution.utils.BottomNavigationViewEx
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@drawable/selector_drawable"
+        app:itemIconTint="@color/tab_selector_color"
+        app:itemTextColor="@color/tab_selector_color"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

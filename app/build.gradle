@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.activedistribution"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        debug {
+            /*buildConfigField "String", "BASE_URL", '"http://192.168.2.39/allproject/active-destribution/api/"'*/
+            // buildConfigField "String", "BASE_URL", '"https://pos.rajagsm.in/api/"'
+            buildConfigField "String", "BASE_URL", '"http://activdistribution.com/api/"'
+        }
+        release {
+            //buildConfigField "String", "BASE_URL", '"https://pos.rajagsm.in/api/"'
+            buildConfigField "String", "BASE_URL", '"http://activdistribution.com/api/"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'jp.wasabeef:glide-transformations:2.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    /*implementation 'jp.wasabeef:glide-transformations:3.0.1'*/
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.squareup.okio:okio:1.14.0'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
+    implementation 'com.android.support:support-v4:27.0.0-rc02'
+    implementation 'com.android.support:support-annotations:27.0.0-rc02'
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation 'com.mindorks:placeholderview:0.7.1'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.android.support:design:27.+'
+    implementation 'com.android.support:cardview-v7:27.+'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.crystal:crystalpreloaders:1.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    /**
+     * CrashLytics
+     * */
+    // Check for v11.4.2 or higher
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+
+    // Add dependency
+   // implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
+
+}
+
+
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+repositories {
+    mavenCentral()
+}

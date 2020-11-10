@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.activedistribution.view.customfont.TextViewSansRegular
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="@color/Black1"
+            android:textSize="@dimen/_16sdp" />
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_notification"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/notification" />
+
+            <com.activedistribution.view.customfont.TextViewSansBold
+                android:id="@+id/notificationCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textColor="@color/White"
+                android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/home_button_bg"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.activedistribution.view.customfont.TextViewSansBold
+            android:id="@+id/tv_new_jobs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_button"
+            android:gravity="center"
+            android:text="@string/new_jobs"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_11sdp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.activedistribution.view.customfont.TextViewSansBold
+            android:id="@+id/tv_current_jobs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/current_jobs"
+            android:textColor="@color/selected_tab_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <com.activedistribution.view.customfont.TextViewSansBold
+            android:id="@+id/tv_complete_jobs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/complete_jobs"
+            android:textColor="@color/selected_tab_color"
+            android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_grey" />
+
+    <FrameLayout
+        android:id="@+id/job_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

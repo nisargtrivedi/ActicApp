@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:background="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.activedistribution.view.customfont.TextViewSansRegular
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/Black1"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:src="@drawable/left_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textHint" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo_blue"/>
+
+            <com.activedistribution.view.customfont.TextViewSansBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_5sdp"/>
+
+
+            <com.activedistribution.view.customfont.EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email_address"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@null"
+                android:drawableLeft="@drawable/mail_black"
+                android:drawablePadding="5dp"
+                android:imeOptions="actionNext"
+                android:backgroundTint="@color/textHint"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColorHint="@color/textHint"
+                android:textColor="@color/Black1"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/Black1"
+                android:layout_margin="@dimen/_5sdp"/>
+
+            <com.activedistribution.view.customfont.TextViewSansBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp" />
+
+            <com.activedistribution.view.customfont.EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/light_grey"
+                android:hint="@string/enter_password"
+                android:padding="@dimen/_2sdp"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:drawableLeft="@drawable/lock_black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:imeOptions="actionDone"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/textHint"
+                android:textColor="@color/Black1"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/Black1"
+                android:layout_margin="@dimen/_5sdp"/>
+
+            <com.activedistribution.view.customfont.Button
+                android:id="@+id/loginBT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/White"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="@string/login" />
+
+
+        </LinearLayout>
+
+    <com.activedistribution.view.customfont.TextViewSansBold
+        android:id="@+id/forgotPasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forogt_password"
+        android:padding="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textColor="@color/Black1" />
+
+</RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+

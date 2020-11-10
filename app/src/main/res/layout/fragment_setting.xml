@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/White">
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="Settings"
+                    android:textColor="@color/Black1"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textHint" />
+
+            <RelativeLayout
+                android:id="@+id/notification_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:id="@+id/notTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Notifications"
+                    android:textColor="@color/Black1"
+                    android:textSize="16sp" />
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notTitle"
+                    android:layout_marginStart="3dp"
+                    android:padding="2dp"
+                    android:text="@string/turn_on_off_your_push_notification"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:sb_background="@color/colorPrimary"
+                    app:sb_button_color="@color/White"
+                    app:sb_checked="true"
+                    app:sb_checked_color="@color/colorPrimary"
+                    app:sb_checkline_color="@color/colorPrimary"
+                    app:sb_uncheck_color="@color/colorPrimary"
+                    app:sb_uncheckcircle_color="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black1" />
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:id="@+id/changePasswordTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:drawableEnd="@drawable/right_arrow"
+                android:padding="5dp"
+                android:text="Change Password"
+                android:textColor="@color/Black1"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black1" />
+
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:id="@+id/rateAppTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:text="Rate App"
+                android:textColor="@color/Black1"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black1" />
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:id="@+id/shareAppTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Share App"
+                android:textColor="@color/Black1"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black1" />
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:id="@+id/aboutUsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:text="About Us"
+                android:textColor="@color/Black1"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black1" />
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:id="@+id/contactUsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:text="Contact Us"
+                android:textColor="@color/Black1"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black1" />
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:id="@+id/termsConditionsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/terms_amp_condition"
+                android:textColor="@color/Black1"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Black1" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <com.activedistribution.view.customfont.TextViewSansRegular
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/job_detail"
+                android:textColor="@color/Black1"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:src="@drawable/left_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textHint" />
+
+        <ImageView
+            android:id="@+id/jobIV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_135sdp"
+            android:src="@drawable/img4"
+            android:scaleType="fitXY"
+            android:minHeight= "@dimen/_150sdp" />
+
+        <com.activedistribution.view.customfont.TextViewSansBold
+            android:id="@+id/job_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="#fderfch"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <com.activedistribution.view.customfont.TextViewSansBold
+            android:id="@+id/job_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="#fderfch"
+            android:textAllCaps="true"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.activedistribution.view.customfont.TextViewSansRegular
+            android:id="@+id/job_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/calender"
+            android:gravity="center"
+            android:drawablePadding="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_7sdp"
+            android:text="Nov 14, 2018"
+            android:textColor="@color/textHint"
+            android:textSize="@dimen/_11sdp" />
+
+        <com.activedistribution.view.customfont.TextViewSansBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="Quantity of Flyers"
+            android:textColor="@color/Black1"
+            android:textSize="@dimen/_11sdp" />
+
+        <com.activedistribution.view.customfont.TextViewSansRegular
+            android:id="@+id/quantity_flyers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="2000"
+            android:textColor="@color/textHint"
+            android:textSize="@dimen/_11sdp" />
+
+        <com.activedistribution.view.customfont.TextViewSansBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="Area"
+            android:textColor="@color/Black1"
+            android:textSize="@dimen/_11sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:id="@+id/frg"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"/>
+
+            <ImageView
+                android:translationZ="@dimen/_10sdp"
+                android:id="@+id/imgZoom"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/zoom_img"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"></ImageView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/acceptReject_LL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/acceptLL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_button"
+                android:gravity="center"
+                android:textAllCaps="false">
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_check"
+                    android:drawableTint="@color/White"
+                    android:gravity="center"
+                    android:text="Accept"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rejectLL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rejetct_bg"
+                android:gravity="center"
+                android:textAllCaps="false">
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/places_ic_clear"
+                    android:drawableTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="Reject"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/startLL"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/gradient_button"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <com.activedistribution.view.customfont.TextViewSansBold
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:drawableTint="@color/White"
+                android:gravity="center"
+                android:text="Start Job"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/complte_pauseLL"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/completedLL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_button"
+                android:gravity="center"
+                android:textAllCaps="false">
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/White"
+                    android:gravity="center"
+                    android:text="@string/completed"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pauseLL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rejetct_bg"
+                android:gravity="center"
+                android:textAllCaps="false">
+
+                <com.activedistribution.view.customfont.TextViewSansBold
+                    android:id="@+id/pauseTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="@string/pause"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.activedistribution.view.customfont.TextViewSansBold
+            android:id="@+id/jobProgressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:text="Your job is in progress"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
